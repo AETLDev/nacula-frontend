@@ -21,14 +21,14 @@ export default class Header extends Component {
                             </div>
                             <div className="header-profile">
                                 <ul>
-                                    <li><a href=""><img src={SupportIcon} alt=""/></a></li>
-                                    <li><a href=""><img src={ChatIcon} alt=""/></a></li>
-                                    <li><a href=""><img src={NotificationIcon} alt=""/></a></li>
+                                    <li><a href="#"><img src={SupportIcon} alt=""/></a></li>
+                                    <li><a href="#"><img src={ChatIcon} alt=""/></a></li>
+                                    <li><a href="#"><img src={NotificationIcon} alt=""/></a></li>
                                 </ul>
                                 <DropdownButton id="dropdown-basic-button" title="John Doe">
+                                    <Dropdown.Item href="">Profile</Dropdown.Item>
                                     <Dropdown.Item href="">Settings</Dropdown.Item>
-                                    <Dropdown.Item href="">Another action</Dropdown.Item>
-                                    <Dropdown.Item href="">Something else</Dropdown.Item>
+                                    <Dropdown.Item href="/">Logout</Dropdown.Item>
                                 </DropdownButton>
                                 <img src="https://i.pravatar.cc/300" alt="" className="avatar"/>
                             </div>

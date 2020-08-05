@@ -1,31 +1,27 @@
 import React from 'react';
 import './App.css';
-import {Container, Row, Col} from 'react-bootstrap';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
+import Layout from './components/Layout';
+import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import DailyActivity from './pages/DailyActivity';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <div className="layout">
-        <Container fluid>
-          <Router>
-            <Row>
-              <Col md={2} className="no-pad">
-                <Sidebar />
-              </Col>
-              <Col md={10} className="no-pad">
-                  <div className="layout-wrapper">
-                	<Route exact path="/dashboard" component={Dashboard} />
-                  </div>
-              </Col>
-            </Row>
-          </Router>
-        </Container>
-      </div>
+      <Router>
+          <Route exact path="/" component={Login} />
+          <Route exact path="/dashboard">
+            <Layout>
+              <Dashboard />
+            </Layout>
+          </Route>
+          <Route exact path="/daily-activity">
+            <Layout>
+              <DailyActivity />
+            </Layout>
+          </Route>
+      </Router>
     </div>
   );
 }
