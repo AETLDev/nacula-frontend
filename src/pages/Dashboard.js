@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import {Container, Row, Col, Tab, Nav, ProgressBar} from 'react-bootstrap';
+import {Row, Col, Tab, Nav, ProgressBar} from 'react-bootstrap';
 import {Doughnut} from 'react-chartjs-2';
 import Select from 'react-select';
 import empChart from '../media/emp_chart.svg';
-import proChart from '../media/pro_chart.svg';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
@@ -42,7 +41,7 @@ export default class Dashboard extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={4}>
+                    <Col md={6}>
                         <div className="overview-block">
                             <div className="block-text">
                                 <p>Total Employees</p>
@@ -52,17 +51,7 @@ export default class Dashboard extends Component {
                             <img src={empChart} alt=""/>
                         </div>
                     </Col>
-                    <Col md={4}>
-                        <div className="overview-block">
-                            <div className="block-text">
-                                <p>Total Project</p>
-                                <h4>42</h4>
-                                <span>10+ (Upcoming)</span>
-                            </div>
-                            <img src={proChart} alt=""/>
-                        </div>
-                    </Col>
-                    <Col md={4}>
+                    <Col md={6}>
                         <div className="overview-block">
                             <div className="online-block">
                                 <CircularProgressbar 
@@ -162,15 +151,6 @@ export default class Dashboard extends Component {
                                     </Tab.Content>
                                 </div>
                             </Tab.Container>
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div className="application-block">
-                            <div className="block-head">
-                                <h3>Top Five Employees</h3>
-                            </div>
                         </div>
                     </Col>
                 </Row>

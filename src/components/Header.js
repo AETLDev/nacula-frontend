@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import {Container, Row, Col, DropdownButton, Dropdown} from 'react-bootstrap';
-import ChatIcon from '../media/chat.svg';
-import NotificationIcon from '../media/notification.svg';
-import SupportIcon from '../media/support.svg';
 
 export default class Header extends Component {
     render() {
@@ -16,17 +13,16 @@ export default class Header extends Component {
                     </Col>
                     <Col md={10} className="no-pad">
                         <div className="header-content">
-                            <div className="search-bar">
+                            {/* <div className="search-bar">
                                 <input type="text" placeholder="Search transactions, invoices or help"/>
-                            </div>
+                            </div> */}
                             <div className="header-profile">
-                                <ul>
+                                {/* <ul>
                                     <li><a href="#"><img src={SupportIcon} alt=""/></a></li>
                                     <li><a href="#"><img src={ChatIcon} alt=""/></a></li>
                                     <li><a href="#"><img src={NotificationIcon} alt=""/></a></li>
-                                </ul>
+                                </ul> */}
                                 <DropdownButton id="dropdown-basic-button" title="John Doe">
-                                    <Dropdown.Item href="">Profile</Dropdown.Item>
                                     <Dropdown.Item href="">Settings</Dropdown.Item>
                                     <Dropdown.Item href="/">Logout</Dropdown.Item>
                                 </DropdownButton>

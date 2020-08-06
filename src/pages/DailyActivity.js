@@ -1,25 +1,9 @@
 import React, { Component } from 'react';
-import {Container, Row, Col, Table} from 'react-bootstrap';
-import Select from 'react-select';
+import {Row, Col, Table} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import {Bar} from 'react-chartjs-2';
 
 export default class DailyActivity extends Component {
     render() {
-        const data = {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-            datasets: [
-              {
-                label: 'Progress Over Month',
-                backgroundColor: '#A3A1FB',
-                borderColor: '#A3A1FB',
-                borderWidth: 0,
-                hoverBackgroundColor: '#6765DB',
-                hoverBorderColor: '#A3A1FB',
-                data: [65, 59, 80, 81, 56, 55, 45]
-              }
-            ]
-        };
         return (
             <React.Fragment>
                 <div className="container-fluid">
@@ -44,63 +28,105 @@ export default class DailyActivity extends Component {
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Mark</td>
+                                    <td>
+                                        <div className="wh-profile">
+                                            <img src="https://i.pravatar.cc/50" alt="WH Avatar"/>
+                                            <div className="wh-caption">
+                                                <p>David James</p>
+                                            </div>
+                                        </div>
+                                    </td>
                                     <td>Web App Developer</td>
                                     <td>Development</td>
                                     <td>
-                                        <Link className="activity-button" to="/">Latest Activity</Link>
+                                        <Link className="activity-button" to="/activity/1">Latest Activity</Link>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>John</td>
+                                    <td>
+                                        <div className="wh-profile">
+                                            <img src="https://i.pravatar.cc/50" alt="WH Avatar"/>
+                                            <div className="wh-caption">
+                                                <p>David James</p>
+                                            </div>
+                                        </div>
+                                    </td>
                                     <td>Android Developer</td>
                                     <td>Development</td>
                                     <td>
-                                        <Link className="activity-button" to="/">Latest Activity</Link>
+                                        <Link className="activity-button" to="/activity/2">Latest Activity</Link>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Michelle</td>
+                                    <td>
+                                        <div className="wh-profile">
+                                            <img src="https://i.pravatar.cc/50" alt="WH Avatar"/>
+                                            <div className="wh-caption">
+                                                <p>David James</p>
+                                            </div>
+                                        </div>
+                                    </td>
                                     <td>iOS Developer</td>
                                     <td>Development</td>
                                     <td>
-                                        <Link className="activity-button" to="/">Latest Activity</Link>
+                                        <Link className="activity-button" to="/activity/3">Latest Activity</Link>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Smith</td>
+                                    <td>
+                                    <div className="wh-profile">
+                                        <img src="https://i.pravatar.cc/50" alt="WH Avatar"/>
+                                        <div className="wh-caption">
+                                            <p>David James</p>
+                                        </div>
+                                    </div>
+                                    </td>
                                     <td>UX Designer</td>
                                     <td>Design</td>
                                     <td>
-                                        <Link className="activity-button" to="/">Latest Activity</Link>
+                                        <Link className="activity-button" to="/activity/4">Latest Activity</Link>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
-                                    <td>Rafael</td>
+                                    <td>
+                                        <div className="wh-profile">
+                                            <img src="https://i.pravatar.cc/50" alt="WH Avatar"/>
+                                            <div className="wh-caption">
+                                                <p>David James</p>
+                                            </div>
+                                        </div>
+                                    </td>
                                     <td>Illustrator</td>
                                     <td>Design</td>
                                     <td>
-                                        <Link className="activity-button" to="/">Latest Activity</Link>
+                                        <Link className="activity-button" to="/activity/5">Latest Activity</Link>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
-                                    <td>Andy</td>
+                                    <td>
+                                        <div className="wh-profile">
+                                            <img src="https://i.pravatar.cc/50" alt="WH Avatar"/>
+                                            <div className="wh-caption">
+                                                <p>David James</p>
+                                            </div>
+                                        </div>
+                                    </td>
                                     <td>Full-Stack Developer</td>
                                     <td>Development</td>
                                     <td>
-                                        <Link className="activity-button" to="/">Latest Activity</Link>
+                                        <Link className="activity-button" to="/activity/6">Latest Activity</Link>
                                     </td>
                                 </tr>
                             </tbody>
                         </Table>
                     </Row>
                 </div>
-                <div className="container-fluid dashboard-wrapper mt-40 da-wrapper">
+                {/* <div className="container-fluid dashboard-wrapper mt-40 da-wrapper">
                     <Row>
                         <Col>
                             <div className="application-block">
@@ -244,7 +270,7 @@ export default class DailyActivity extends Component {
                             </div>
                         </Col>
                     </Row>
-                </div>
+                </div> */}
             </React.Fragment>
         )
     }

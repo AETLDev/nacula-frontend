@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Container, Row, Col, Form} from 'react-bootstrap';
+import {Form} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
 export default class Login extends Component {
@@ -14,7 +14,7 @@ export default class Login extends Component {
                         <Form.Control type="email" placeholder="Email" />
                         <Form.Control type="password" placeholder="Password" />
                         <Link to="/dashboard"><button type="submit">Login</button></Link>
-                        <a className="forgot-pass" href="">Forgot password?</a>
+                        <a className="forgot-pass" href="/">Forgot password?</a>
                     </form>
                 </div>
             </div>
