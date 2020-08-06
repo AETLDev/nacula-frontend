@@ -13,7 +13,7 @@ export default class Login extends Component {
                     <form action="">
                         <Form.Control type="email" placeholder="Email" />
                         <Form.Control type="password" placeholder="Password" />
-                        <Link to="/dashboard"><button type="submit">Login</button></Link>
+                        <Link to="/daily-activity"><button type="submit">Login</button></Link>
                         <a className="forgot-pass" href="/">Forgot password?</a>
                     </form>
                 </div>

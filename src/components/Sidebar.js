@@ -9,7 +9,7 @@ export default class Sidebar extends Component {
         return (
             <div className="nav-sidebar">
                 <ul>
-                    <li><NavLink to="/dashboard"><img src={DashboardIcon} alt=""/> <span>Dashboard</span></NavLink></li>
+                    {/* <li><NavLink to="/dashboard"><img src={DashboardIcon} alt=""/> <span>Dashboard</span></NavLink></li> */}
                     <li><NavLink to="/daily-activity"><img src={ActivityIcon} alt=""/> <span>Daily Activity</span></NavLink></li>
                     <li><NavLink to="/employees"><img src={userIcon} alt=""/> <span>Employees</span></NavLink></li>
                 </ul>
