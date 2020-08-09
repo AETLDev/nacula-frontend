@@ -3,6 +3,7 @@ import './App.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Layout from './components/Layout';
 import Login from './pages/Login';
+import Forgot from './pages/Forgot';
 import Dashboard from './pages/Dashboard';
 import DailyActivity from './pages/DailyActivity';
 import Employees from './pages/Employees';
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <Router>
           <Route exact path="/" component={Login} />
+          <Route exact path="/forgot" component={Forgot} />
           <Route exact path="/dashboard">
             <Layout>
               <Dashboard />

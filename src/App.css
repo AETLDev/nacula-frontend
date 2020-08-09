@@ -308,30 +308,30 @@ img {
 /* Login */
 
 .login-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 450px;
     background: #fff;
-    box-shadow: 0px 2px 6px #0000000f;
-    border-radius: 4px;
-    padding: 30px;
+    min-height: 100vh;
 }
 
 .login-logo {
     text-align: center;
 }
-.login-logo h3 {
-    color: #3477E4;
-    font-weight: bold;
-    font-size: 28px;
-    letter-spacing: 2px;
+
+.login-logo p {
+    color: #4D4F5C;
+    opacity: 0.5;
+    margin-top: 40px;
+    font-size: 18px;
+}
+.checkbox-inp, .checkbox-inp input {
+    margin-bottom: 0 !important;
+}
+.login-form {
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
-.login-form {
-    margin-top: 30px;
+.login-form form {
+    margin-top: 50px;
 }
 
 .login-form input {
@@ -352,13 +352,31 @@ img {
     transition: 0.3s;
     outline: none;
 }
+
 .login-form button:hover {
     background: #3063b7;
+}
+
+.login-control {
+    width: 100%;
+    border: 0px;
+    border-bottom: 2px solid #E9E9F0;
+    padding: 15px 10px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+.login-control:focus {    
+    border-bottom: 2px solid #186DF6;
 }
 
 .forgot-pass {
     margin-top: 15px;
     display: inline-block;
+}
+
+.auth-actions {
+    margin: 20px -15px;
+    margin-bottom: 40px;
 }
 
 .white-wrapper {
